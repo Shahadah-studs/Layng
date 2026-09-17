@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LayNG Drive 3D - Shahadah Studios Elite</title>
+    <style>
+        body, html { margin: 0; padding: 0; overflow: hidden; background: #0f172a; font-family: monospace; }
+        #ui { position: absolute; top: 20px; left: 20px; color: #fff; font-size: 22px; text-shadow: 2px 2px #000; z-index: 10; pointer-events: none; }
+        #instructions { position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%); color: #67e8f9; font-size: 16px; text-align: center; text-shadow: 1px 1px #000; pointer-events: none; }
+    </style>
+</head>
+<body>
+    <div id="ui">🏎️ Speed: <span id="speed-meter">0</span> km/h</div>
+    <div id="instructions">Use WASD or Arrow Keys to Drive<br>SPACEBAR for Handbrake / Stop</div>
+    <script type="module" src="/game.ts"></script>
+</body>
+</html>
